@@ -14,7 +14,7 @@ export class CarService {
             features: '110 kW AC synchronous electric motor',
             year: new Date('1/1/2020'),
             availability: 'Yes',
-            photoPath:'assets/images/2020-nissan-leaf.png'
+            photoPath:'https://user-images.githubusercontent.com/60717471/74196312-8f992980-4c22-11ea-97d9-9a20c30d06cb.png'
            
             },
             {
