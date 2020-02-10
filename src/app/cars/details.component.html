@@ -1,0 +1,78 @@
+<div  class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{car.name}}</h3>
+    </div>
+    <div class="panel-body">
+       <div class= "col-xs-10">
+           <div class="row vertical-align">
+               <div class="col-xs-4">
+                 <img class="imageClass" [src] = "car.photoPath"/>
+               </div>
+               <div class ="col-xs-8 ">
+                   <div class="row">
+                       <div class="col-xs-6">
+                        Brand
+                       </div>
+                       <div class="col-xs-6" [ngSwitch]="car.brand">
+                        : 
+                        <span *ngSwitchCase ="1">Nissan</span>
+                        <span *ngSwitchCase ="2">Acura</span>
+                        <span *ngSwitchCase ="3">BMW</span>
+                        <span *ngSwitchCase ="4">Audi</span>
+                        <span *ngSwitchCase ="5">Chevrolet</span>
+                        <span *ngSwitchDefault>No information</span>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-6">
+                     Cost
+                    </div>
+                    <div class="col-xs-6">
+                     : {{car.cost}}
+                     </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-6">
+                     Key Features
+                    </div>
+                    <div class="col-xs-6">
+                     : {{car.features}}
+                     </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-6">
+                    Year
+                    </div>
+                    <div class="col-xs-6">
+                     : {{car.year | date}}
+                     </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-6">
+                     Availability
+                    </div>
+                    <div class="col-xs-6">
+                     : {{car.availability}}
+                     </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-6">
+                    PhotoPath
+                    </div>
+                    <div class="col-xs-6">
+                     : {{car.photoPath}}
+                     </div>
+                   </div>
+    
+               </div>
+           </div>
+    
+       </div>  
+    </div>
+    <div class="panel-footer">
+      <a class="btn btn-primary" [routerLink]="['/list',{id:car.id}]">Back to List</a>
+      
+      <button  class="btn btn-primary pull-right" (click) ="viewNextCar()">
+          View Next Car
+      </button>
+    </div>
