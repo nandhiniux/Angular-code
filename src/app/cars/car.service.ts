@@ -25,7 +25,7 @@ export class CarService {
               features: '300-hp, 3.5-liter DOHC 24-valve V6 engine',
               year: new Date('1/1/2020'),
               availability: 'Yes',
-              photoPath:'assets/images/model-2020-maxima.png'
+              photoPath:'https://user-images.githubusercontent.com/60717471/74196989-14d10e00-4c24-11ea-8190-0a1a380be12d.png'
             
               },
               {
@@ -36,7 +36,7 @@ export class CarService {
                 features: '1.6-liter DOHC 16-valve 4-cylinder engine',
                 year: new Date('1/1/2020'),
                 availability: 'Yes',
-                photoPath:'assets/images/model-2020-versa.png'
+                photoPath:'https://user-images.githubusercontent.com/60717471/74197063-40ec8f00-4c24-11ea-9311-9b3bfcc4e19c.png'
               
                 },
         
