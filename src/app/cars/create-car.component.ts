@@ -51,11 +51,10 @@ export class CreateCarComponent implements OnInit {
         id: null,
         name: null,
         brand: 'select' ,
-        cost : null,
+        cost: null,
         features: null,
-        year: null,
         availability : null,
-        photoPath:null,
+        noOfAvailability:null
         }; 
         this.panelTitle ='Create New Car';
     }
