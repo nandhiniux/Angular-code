@@ -1,6 +1,8 @@
 .imageClass{
-    width:255px;
-    height:120px;
+   max-width:255px;
+   max-height:120px;
+   width: 100%;
+   height: auto;
 }
 .vertical-align{
     display: flex;
