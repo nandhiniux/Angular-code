@@ -6,7 +6,7 @@
    <div class= "col-xs-10">
        <div class="row vertical-align">
            <div class="col-xs-4">
-             <img class="imageClass" [src] = "car.photoPath"/>
+             <img class="imageClass"  src= "assets/images/sampleCar.png"/>
            </div>
            <div class ="col-xs-8 ">
                <div class="row">
@@ -41,14 +41,6 @@
                </div>
                <div class="row">
                 <div class="col-xs-6">
-                Year
-                </div>
-                <div class="col-xs-6">
-                 : {{car.year | date}}
-                 </div>
-               </div>
-               <div class="row">
-                <div class="col-xs-6">
                  Availability
                 </div>
                 <div class="col-xs-6">
@@ -57,12 +49,13 @@
                </div>
                <div class="row">
                 <div class="col-xs-6">
-                PhotoPath
+                No Of Available Cars
                 </div>
                 <div class="col-xs-6">
-                 : {{car.photoPath}}
+                 : {{car.noOfAvailability}}
                  </div>
                </div>
+               
 
            </div>
        </div>
