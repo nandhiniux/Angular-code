@@ -3,3 +3,10 @@ padding-top: 25px;
 }
 .right
 {float: right;}
+.title{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: rgb(13, 40, 160);
+  margin-top:0;
+}
